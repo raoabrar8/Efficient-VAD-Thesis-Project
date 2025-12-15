@@ -1,0 +1,9 @@
+Video: D:/Efficient-VAD Thesis Project/data/test_videos/UCF-Crime/Abuse/Abuse001_x264.mp4
+Threshold: 0.220000
+Total Frames: 910
+Anomaly Frames: 819
+Status: ANOMALY
+First Anomaly Frame: 9
+Last Anomaly Frame: 909
+
+Scores (first 10): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2911943793296814]

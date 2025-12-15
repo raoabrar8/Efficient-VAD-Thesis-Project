@@ -1,0 +1,5 @@
+path,total_videos,total_mp4,total_npy
+data\normal_videos,50,50,0
+data\test_videos,180,180,0
+data\features_v3\train,50,0,50
+data\features_v3\test,180,0,180

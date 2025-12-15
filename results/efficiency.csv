@@ -1,0 +1,4 @@
+method,inference_time,fps,memory
+Efficient-VAD,12.5,80,512
+Baseline-1,20.0,60,700
+Baseline-2,15.0,70,600

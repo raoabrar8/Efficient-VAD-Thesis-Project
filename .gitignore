@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large)
+data/videos/
+data/test_videos/
+data/normal_videos/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Features (can be regenerated)
+data/features_v3_backup/
+data/features_v3_fixed/
+*.npy
+
+# Checkpoints (optional - uncomment if you don't want to track)
+# data/checkpoints/*.pth
+
+# Results (optional - uncomment if you don't want to track)
+# results/
+# Results/
+# results_easy/
+# results_graphs_v3/
+# thesis_plots/
+
+# Logs
+logs/*.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp_scores/
+*.tmp
+*.temp
+
+# Annotated videos
+annotated_*.mp4
+Video_result.avi
+
+# CSV data files (optional - uncomment if you don't want to track)
+# *.csv
+
+
+

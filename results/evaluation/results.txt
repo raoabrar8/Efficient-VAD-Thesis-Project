@@ -1,0 +1,19 @@
+EFFICIENT-VAD PRO FINAL RESULTS
+===============================
+AUC Score        : 0.9902
+Optimal Threshold: 0.107776
+
+Accuracy         : 0.9611
+Precision        : 0.9624
+Recall           : 0.9846
+F1-Score         : 0.9734
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.96      0.90      0.93        50
+    Abnormal       0.96      0.98      0.97       130
+
+    accuracy                           0.96       180
+   macro avg       0.96      0.94      0.95       180
+weighted avg       0.96      0.96      0.96       180

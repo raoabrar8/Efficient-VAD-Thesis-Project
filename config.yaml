@@ -1,0 +1,79 @@
+# Configuration file for Efficient Anomaly Detection in Surveillance Videos
+# Thesis Project: Using Pretrained CNN and Self-Supervised Learning
+
+# ==========================================
+# PATHS
+# ==========================================
+paths:
+  train_videos: "./data/normal_videos"
+  test_videos: "./data/test_videos"
+  features_dir: "./data/features_v3"
+  checkpoints_dir: "./data/checkpoints"
+  results_dir: "./results"
+  logs_dir: "./logs"
+
+# ==========================================
+# FEATURE EXTRACTION
+# ==========================================
+feature_extraction:
+  model: "mobilenet_v3_large"  # Pretrained CNN backbone
+  image_size: 224
+  frame_skip: 3  # Extract every Nth frame
+  batch_size: 32
+  output_dim: 960  # MobileNetV3-Large feature dimension
+
+# ==========================================
+# MODEL ARCHITECTURE
+# ==========================================
+model:
+  input_dim: 960
+  hidden_dim: 256
+  latent_dim: 64
+  num_memories: 50  # Number of memory slots for normal patterns
+  sequence_length: 10  # Temporal window size
+
+# ==========================================
+# TRAINING
+# ==========================================
+training:
+  batch_size: 128
+  epochs: 30
+  learning_rate: 0.0002
+  entropy_weight: 0.0002  # Weight for entropy regularization
+  sequence_stride: 5  # Overlap between sequences
+
+# ==========================================
+# INFERENCE
+# ==========================================
+inference:
+  sequence_length: 10
+  stride: 5
+  batch_size: 64  # GPU, 8 for CPU
+  smoothing_kernel: 5
+  threshold_percentile: 98  # Percentile-based threshold
+  fixed_threshold: null  # Set to a value to use fixed threshold instead
+
+# ==========================================
+# EVALUATION
+# ==========================================
+evaluation:
+  abnormal_classes:
+    - "Abuse"
+    - "Arrest"
+    - "Arson"
+    - "Assault"
+    - "Burglary"
+    - "Explosion"
+    - "Fighting"
+    - "RoadAccidents"
+    - "Robbery"
+    - "Shooting"
+    - "Shoplifting"
+    - "Stealing"
+    - "Vandalism"
+
+# ==========================================
+# DEVICE
+# ==========================================
+device: "cuda"  # "cuda" or "cpu" (auto-detected if "cuda" not available)
+
