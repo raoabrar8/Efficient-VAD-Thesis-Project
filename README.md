@@ -366,7 +366,7 @@ For questions or issues, please open an issue or contact the author.
 
 ---
 
-**Last Updated**: 2024
+**Last Updated**: 2025
 
 
 
